@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* 通用样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 0 10px;
+    }
+
+    /* 顶部状态栏样式 */
+    .status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 8px 15px;
+    }
+
+    .status-icons img {
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+    }
+
+    /* 标题栏样式 */
+    .title-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 8px 15px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .back-icon,
+    .more-icon {
+      cursor: pointer;
+    }
+
+    /* 网址栏样式 */
+    .url-bar {
+      background-color: #f9f9f9;
+      padding: 8px 15px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .url-bar a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    /* 新闻标题样式 */
+    h1 {
+      padding: 15px;
+      font-size: 18px;
+    }
+
+    /* 新闻信息样式 */
+    .news-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 15px 15px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .news-info span {
+      margin-right: 15px;
+    }
+
+    /* 视频区域样式 */
+    .video-container {
+      position: relative;
+      width: 100%;
+
+    }
+
+    .video-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    .video-time {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    /* 新闻摘要样式 */
+    .news-summary {
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* 来源和二维码区域样式 */
+    .source-qr {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+
+    .source,
+    .producer {
+      width: 100%;
+      margin-bottom: 10px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .producer {
+      text-align: center;
+    }
+
+    .qr-code img {
+      width: 120px;
+      height: 120px;
+    }
+
+    /* 点赞按钮样式 */
+    .like-button {
+      text-align: center;
+      margin: 15px 0;
+    }
+
+    .like-button button {
+      padding: 8px 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  </style>
+  <title>新闻页面</title>
+</head>
+
+<body>
+
+  <!-- 标题栏 -->
+
+  <!-- 网址栏 -->
+  <!-- <div class="url-bar">
+    <a href="https://m-fztvapp.zohi.tv">m-fztvapp.zohi.tv</a>
+  </div> -->
+  <!-- 新闻标题 -->
+  <h1>关注肾脏健康 避免“小问题”滑向“大危机”</h1>
+  <!-- 新闻信息 -->
+  <div class="news-info">
+    <span>2024-07-08 19:26</span>
+    <span>财经新视界</span>
+  </div>
+  <!-- 视频区域 -->
+  <img src="./4.jpg" width="100%" alt="">
+  <div class="video-container">
+    <video src="./1.mp4" width="100%" controls></video>
+    <div class="play-button"></div>
+    <div class="video-time">
+      <span>0:00</span> / <span>2:41</span>
+    </div>
+  </div>
+  <!-- 新闻摘要 -->
+  <div class="news-summary">
+    <p>3月13日是第20个世界肾脏日，今年肾脏日以“及早发现，保护肾脏健康”为核心倡议，呼吁每个人关注肾脏发出的“无声信号”，避免从“小问题”滑向“大危机”。</p>
+  </div>
+  <!-- 来源和二维码区域 -->
+  <div class="source-qr">
+    <div class="source">
+      <span>来源：</span>
+      <span>财经新视界</span>
+    </div>
+    <div class="producer">
+
+    </div>
+    <div class="qr-code">
+      <!-- <img src="qr-code.png" alt="二维码"> -->
+    </div>
+  </div>
+  <!-- 点赞按钮 -->
+  <div class="like-button">
+    <button>点赞 99+</button>
+  </div>
+  <img src="./2.jpg" width="100%" alt="">
+
+  <a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.joygo.fushiyuedong"> <img src="./3.jpg" width="100%"
+      alt=""></a>
+</body>
+
+</html>
